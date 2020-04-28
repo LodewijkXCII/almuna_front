@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Lora&display=swap");
+
+:root {
+  --primary-color: #1d283a;
+  --secondary-color: #37404f;
+  --gold-color: #bea950;
+  --gold-opacity: #beaa5052;
+  --blue-opacity: rgba(55, 64, 79, 0.7);
+  --font-lora: "Lora", serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1d283a;
+  font-family: "Karla", sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+h1 {
+  font-family: var(--font-lora);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: var(--font-lora);
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.gold {
+  color: var(--gold-color);
+}
+
+.dark-blue {
+  color: var(--primary-color);
+}
+
+.float-right {
+  width: 15%;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+}
+
+button.blue-gold {
+  color: var(--gold-color);
+  background-color: var(--primary-color);
+  padding: 0.2rem;
+  border-radius: 15px;
+  font-family: var(--font-lora);
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 2px solid var(--gold-color);
+  background-clip: content-box;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+button.btn-gold {
+  color: var(--gold-color);
+  background-color: transparent;
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 2px solid var(--gold-color);
+  text-transform: uppercase;
+}
+
+button.btn-gold-solid {
+  color: #fff;
+  background-color: var(--gold-color);
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 1px 3px 9px rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.full {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-wrapper {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  backdrop-filter: brightness(1.5) opacity(0.5);
+}
+
+.navbar-wrapper .navbar-brand img {
+  height: 75px;
+}
+
+.navbar-wrapper .navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-wrapper .navbar-links a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.navbar-wrapper .navbar-links a:hover {
+  color: var(--gold-color);
+  border-bottom: 1px solid var(--gold-color);
+}
+
+.navbar-wrapper .navbar-links a:hover:nth-last-of-type(1) {
+  border: 0;
+}
+
+.navbar-wrapper .navbar-links a:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.section {
+  height: 100vh;
+}
+
+.section.img-full.landing {
+  background-image: url(../img/flower_gold_table.jpg);
+}
+
+.section-B {
+  background-image: url(../img/al_manusabaa_catering_food.jpg);
+}
+
+.section-C {
+  padding: 2rem 0;
+}
+
+.reviews {
+  background-image: url(../img/water_glass_pour.jpg);
+}
+
+.bg-color-full {
+  width: 100%;
+  background-color: var(--blue-opacity);
+}
+
+.keywords {
+  line-height: 0.5;
+  text-align: center;
+}
+
+.keywords span {
+  display: inline-block;
+  position: relative;
+}
+
+.keywords span:before,
+.keywords span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  top: 0;
+  width: 80%;
+}
+
+.keywords span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.keywords span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 8rem;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.callout {
+  margin-top: 2rem;
+}
+
+.callout h2 {
+  font-size: 1.5rem;
+}
+
+.keyfeatures {
+  text-align: center;
+}
+
+.feature {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature svg {
+  color: var(--gold-color);
+  margin: 0.5rem;
+}
+
+.pakket {
+  background-color: var(--blue-opacity);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.pakket h3 {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(55, 64, 79, 0.8);
+  padding: 2rem;
+}
+
+.inhoud {
+  padding: 1rem 2rem;
+}
+
+.inhoud ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.inhoud ul li:before {
+  content: "✓";
+  margin-right: 7px;
+}
+
+.team {
+  margin-top: 2rem;
+}
+
+.bg-review {
+  padding: 2rem 0;
+}
+
+.review {
+  padding: 1rem;
+}
+
+.review .review-title h4 {
+  margin-bottom: 5px;
+}
+
+.review .review-rating {
+  text-align: center;
+  color: var(--gold-color);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  width: 100%;
+}
+
+.footer-wrapper {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-wrapper img {
+  height: 75px;
+  margin-bottom: 1rem;
+}
+
+.footer-wrapper p {
+  font-size: 0.8rem;
+}
+
+.footer-wrapper .links a {
+  margin: 0 0.5rem;
+  font-size: 0.7rem;
+}
+
+.footer-wrapper .links a:hover {
+  color: var(--gold-color);
+}
+
+@media (min-width: 850px) {
+  h1.title {
+    font-size: 5rem;
+  }
+  h2.subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .navbar-wrapper {
+    padding: 1rem 5rem;
+  }
+
+  .keyfeatures {
+    display: flex;
+    text-align: center;
+  }
+
+  .inhoud {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .pakket {
+    background-color: var(--blue-opacity);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+  }
+
+  .happycust {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

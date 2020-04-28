@@ -1,0 +1,31 @@
+{
+  "name": "almanusabaa",
+  "version": "1.0.0",
+  "description": "Company page for caterings service",
+  "author": "Loek Zweers",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@nuxtjs/apollo": "^4.0.0-rc19",
+    "graphql": "^15.0.0",
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
