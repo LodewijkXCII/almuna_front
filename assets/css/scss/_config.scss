@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+$primary-color: #1d283a;
+$secondary-color: #37404f;
+$gold-color: #bea950;
+$gold-opacity: #beaa5052;
+$blue-opacity: rgba(55, 64, 79, 0.7);
+$font-lora: 'Lora', serif;
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gold {
+  color: $gold-color;
+}
+
+.dark-blue {
+  color: $primary-color;
+}
+
+.mt-150 {
+  margin-top: 150px !important;
+}
+
+.float-right {
+  width: 15%;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+}
+
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}em;
+  }
+  .m-tb-#{$space} {
+    margin-top: #{$space}em;
+    margin-bottom: #{$space}em;
+  }
+  .m-t-#{$space} {
+    margin-top: #{$space}em;
+  }
+  .m-b-#{$space} {
+    margin-bottom: #{$space}em;
+  }
+  .m-lr-#{$space} {
+    margin-left: #{$space}em;
+    margin-right: #{$space}em;
+  }
+  .m-l-#{$space} {
+    margin-left: #{$space}em;
+  }
+  .m-r-#{$space} {
+    margin-right: #{$space}em;
+  }
+}

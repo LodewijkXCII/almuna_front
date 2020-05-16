@@ -11,7 +11,13 @@
         <div class="keywords">
           <p><span>Great Food | Great Service</span></p>
         </div>
-        <div class="bottom"><button class="blue-gold">Catering</button></div>
+        <div class="bottom">
+          <button class="blue-gold">
+            <nuxt-link to="catering">
+              Catering
+            </nuxt-link>
+          </button>
+        </div>
       </div>
     </div>
     <section class="container callout">

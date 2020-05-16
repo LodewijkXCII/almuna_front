@@ -1,0 +1,108 @@
+// BUTTON //
+button.blue-gold {
+  color: $gold-color;
+  background-color: $primary-color;
+  padding: 0.2rem;
+  border-radius: 15px;
+  font-family: $font-lora;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 2px solid $gold-color;
+  background-clip: content-box;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+button.btn-gold {
+  color: $gold-color;
+  background-color: transparent;
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 2px solid $gold-color;
+  text-transform: uppercase;
+}
+
+button.btn-gold-solid {
+  color: #fff;
+  background-color: $gold-color;
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 1px 3px 9px rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+//NAVBAR//
+.navbar-wrapper {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  backdrop-filter: brightness(1.5) opacity(0.5);
+
+  .navbar-brand img {
+    height: 75px;
+    width: auto;
+  }
+
+  .navbar-links {
+    display: none;
+    span {
+      display: unset;
+    }
+  }
+}
+
+//SECTION//
+.section {
+  height: 100vh;
+}
+
+.section.img-full.landing {
+  background-image: url(../img/flower_gold_table.jpg);
+}
+
+.section-B {
+  background-image: url(../img/al_manusabaa_catering_food.jpg);
+}
+
+.section-C {
+  padding: 2rem 0;
+}
+
+//FOOTER//
+footer {
+  background-color: $secondary-color;
+  width: 100%;
+}
+
+.footer-wrapper {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-wrapper img {
+  height: 75px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-wrapper p {
+  font-size: 0.8rem;
+}
+
+.footer-wrapper .links a {
+  margin: 0 0.5rem;
+  font-size: 0.7rem;
+}
+
+.footer-wrapper .links a:hover {
+  color: $gold-color;
+}
