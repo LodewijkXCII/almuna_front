@@ -75,127 +75,30 @@
             provident voluptatibus a, rerum deleniti nam maxime impedit.
             Quisquam consequatur expedita mollitia.
           </p>
-          <button class="btn-gold float-right">Lees meer</button>
+          <nuxt-link to="over-ons">
+            <button class="btn-gold float-right">Lees meer</button>
+          </nuxt-link>
         </div>
       </div>
     </section>
     <section class="section-C">
       <div class="img-full container">
         <h2 class="gold">De verschillende Pakketten</h2>
-        <div class="pakketten">
-          <div class="pakket">
-            <h3 class="gold">Brons</h3>
-            <div class="inhoud">
-              <div class="sec-1">
-                <ul>
-                  <li>Keuze uit 4 decoratiestijlen</li>
-                  <li>3 Soorten drank per tafel</li>
-                </ul>
-              </div>
-              <div class="sec-2">
-                <h4
-                  class="gold mb-10
-                "
-                >
-                  Voorgerecht naar keuze
-                </h4>
-                <ul>
-                  <li>Keuze uit 4 decoratiestijlen</li>
-                  <li>3 Soorten drank per tafel</li>
-                </ul>
-              </div>
-              <div class="sec-3">
-                <h4 class="gold">Hoofdgerecht naar keuze</h4>
-                <ul>
-                  <li>Keuze uit 4 decoratiestijlen</li>
-                  <li>3 Soorten drank per tafel</li>
-                </ul>
-              </div>
-              <div class="sec-4">
-                <div class="price gold">
-                  &euro; 25 <span class="small">/persoon</span>
-                </div>
-                <button class="btn-gold">Bekijk details</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Pakketten />
       </div>
     </section>
     <section class="team">
       <h2 class="gold text-center">Het Team</h2>
       <div class="gallery"></div>
     </section>
-    <section class="reviews">
-      <div class="bg-color-full bg-review">
-        <h2 class="gold text-center">Tevreden Klanten</h2>
-        <div class="container happycust">
-          <div class="review">
-            <div class="review-title">
-              <h4>Super service!</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Adipisci minus illum sunt esse cumque ex distinctio praesentium.
-                Sunt eos perferendis voluptatem omnis eaque aspernatur
-                similique, ullam consectetur placeat dignissimos commodi.
-              </p>
-              <div class="review-rating">
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star-half-alt']" />
-              </div>
-            </div>
-          </div>
-          <div class="review">
-            <div class="review-title">
-              <h4>Super service!</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed
-                excepturi voluptatum vero corporis architecto unde quas ea,
-                optio perferendis tenetur ducimus accusamus, minima repellendus
-                nam, voluptate est tempore aperiam ut amet eius eveniet saepe.
-                Alias debitis nihil excepturi sapiente voluptatum iste iure
-                neque eius.
-              </p>
-              <div class="review-rating">
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star-half-alt']" />
-              </div>
-            </div>
-          </div>
-          <div class="review">
-            <div class="review-title">
-              <h4>Super service!</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus quod quas distinctio culpa, quo debitis perferendis
-                molestias ducimus odit pariatur est dolorem, vero in. Fugit
-                reprehenderit est accusamus tenetur necessitatibus molestias sit
-                doloremque, atque, a odit provident nulla alias quo voluptatem,
-                fugiat aut autem inventore accusantium minima? Obcaecati.
-              </p>
-              <div class="review-rating">
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star']" />
-                <font-awesome-icon :icon="['fas', 'star-half-alt']" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Review />
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Review from '~/components/Review.vue'
+import Pakketten from '~/components/Pakketten.vue'
 
 export default {
   head: {
@@ -206,17 +109,12 @@ export default {
         name: 'description',
         content: 'Home page description'
       }
-    ],
-    noscript: [{ innerHTML: 'Body No Scripts', body: true }],
-    script: [
-      { src: '/head.js' },
-      // Supported since 1.0
-      { src: '/body.js', body: true },
-      { src: '/defer.js', defer: '' }
     ]
   },
   components: {
-    Logo
+    Logo,
+    Review,
+    Pakketten
   }
 }
 </script>

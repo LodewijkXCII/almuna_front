@@ -7,11 +7,11 @@
       <font-awesome-icon :icon="['fas', 'bars']" />
     </span>
     <div class="navbar-links" id="navLinks">
-      <nuxt-link to="/about">Wie zijn wij</nuxt-link>
+      <nuxt-link to="/over-ons">Wie zijn wij</nuxt-link>
       <nuxt-link to="/catering">Catering</nuxt-link>
       <nuxt-link to="/zakelijk">Zakelijk</nuxt-link>
-      <nuxt-link to="/gallery">Impressie</nuxt-link>
-      <nuxt-link to="/contact">
+      <nuxt-link to="/gallerij">Impressie</nuxt-link>
+      <nuxt-link to="/over-ons#contact">
         <button class="btn-gold-solid">Offerte aanvragen</button>
       </nuxt-link>
     </div>
