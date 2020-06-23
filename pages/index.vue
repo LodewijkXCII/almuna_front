@@ -124,4 +124,44 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+@import '@/assets/scss/main.scss';
+
+.full {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bg-color-full {
+  width: 100%;
+  background-color: $blue-opacity;
+}
+
+.keywords {
+  line-height: 0.5;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.keyfeatures {
+  text-align: center;
+  display: flex;
+}
+
+.feature {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    color: $gold-color;
+    margin: 0.5rem;
+  }
+}
+</style>

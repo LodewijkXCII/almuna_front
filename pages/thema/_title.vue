@@ -1,16 +1,9 @@
 <template>
   <div>
-    <div class="top-img">
-      <img
-        src="~/assets/img/flower_gold_table.jpg"
-        alt="Pakket Goud overview"
-        class="top-img"
-      />
-    </div>
     <div class="container two-one m-tb-3 ">
       <div class="left">
         <div class="container__info">
-          <h1>Thema Goud</h1>
+          <h1>Thema {{ title }}</h1>
           <p>
             Met een uitgesproken kleur blauw, in combinatie met mintgroen en
             wit, wordt de zaal tot leven gebracht. Geen standaardkleuren, maar
@@ -85,7 +78,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .combinations {
   padding-top: 4em;
 

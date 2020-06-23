@@ -1,12 +1,5 @@
 <template>
   <div>
-    <div class="top-img">
-      <img
-        src="~/assets/img/flower_gold_table.jpg"
-        alt="Romantic Blue overview"
-        class="top-img"
-      />
-    </div>
     <div class="container two-one m-tb-3 ">
       <div class="left">
         <div class="container__info">
@@ -23,14 +16,17 @@
         </div>
         <div class="combinations">
           <h3 class="gold">
-            Dit thema is te combineren de volgende pakketten:
+            Dit pakket is te combineren de volgende thema's:
           </h3>
-          <ul>
-            <li><a href="#" class="gold">Brons</a></li>
-            <li><a href="#" class="gold">Silver</a></li>
-            <li><a href="#" class="gold">Goud</a></li>
-            <li><a href="#" class="gold">Diamant</a></li>
-          </ul>
+          <div class="pakketten">
+            <div class="pakketten-gallery">
+              <Theme
+                v-for="thema in themas"
+                :key="thema.index"
+                :title="thema.title"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="right">
@@ -53,9 +49,34 @@
 
 <script>
 import Offerte from '@/components/Offerte.vue'
+import Theme from '@/components/Theme.vue'
+
 export default {
+  props: {
+    title: String,
+    description: String,
+    type: String
+  },
+  components: {
+    Offerte,
+    Theme
+  },
   data() {
     return {
+      themas: [
+        {
+          title: 'Brons'
+        },
+        {
+          title: 'Silver'
+        },
+        {
+          title: 'Goud'
+        },
+        {
+          title: 'Diamant'
+        }
+      ],
       gerechten: [
         {
           name: 'Visbastila',
@@ -125,9 +146,6 @@ export default {
         }
       ]
     }
-  },
-  components: {
-    Offerte
   }
 }
 </script>

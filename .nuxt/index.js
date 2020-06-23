@@ -11,8 +11,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_templatesplugin65d636be_0a20270e from 'nuxt_plugin_templatesplugin65d636be_0a20270e' // Source: .\\templates.plugin.65d636be.js (mode: 'all')
-import nuxt_plugin_apollomodule_080e0121 from 'nuxt_plugin_apollomodule_080e0121' // Source: .\\apollo-module.js (mode: 'all')
+import nuxt_plugin_templatesplugin180be14e_24b395a2 from 'nuxt_plugin_templatesplugin180be14e_24b395a2' // Source: .\\templates.plugin.180be14e.js (mode: 'all')
+import nuxt_plugin_apollomodule_55bf2614 from 'nuxt_plugin_apollomodule_55bf2614' // Source: .\\apollo-module.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -151,12 +151,12 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_templatesplugin65d636be_0a20270e === 'function') {
-    await nuxt_plugin_templatesplugin65d636be_0a20270e(app.context, inject)
+  if (typeof nuxt_plugin_templatesplugin180be14e_24b395a2 === 'function') {
+    await nuxt_plugin_templatesplugin180be14e_24b395a2(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_apollomodule_080e0121 === 'function') {
-    await nuxt_plugin_apollomodule_080e0121(app.context, inject)
+  if (typeof nuxt_plugin_apollomodule_55bf2614 === 'function') {
+    await nuxt_plugin_apollomodule_55bf2614(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

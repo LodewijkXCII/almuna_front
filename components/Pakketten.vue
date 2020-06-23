@@ -68,4 +68,48 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+@import '@/assets/scss/main.scss';
+
+.pakket {
+  background-color: $blue-opacity;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  h3 {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(55, 64, 79, 0.8);
+    padding: 2rem;
+  }
+  .inhoud {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      li:before {
+        content: '✓';
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+.pakketten {
+  margin-left: 2rem;
+}
+
+.pakketten-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+</style>

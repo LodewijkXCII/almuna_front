@@ -6,7 +6,9 @@
       <p>
         {{ description }}
       </p>
-      <nuxt-link :to="`/thema/${title}`" class="gold">Meer info</nuxt-link>
+      <nuxt-link :to="`${type}/${title}`" :tilte="title" class="gold"
+        >Meer info</nuxt-link
+      >
     </div>
   </div>
 </template>
@@ -16,7 +18,8 @@ export default {
   name: 'Theme',
   props: {
     title: String,
-    description: String
+    description: String,
+    type: String
   }
 }
 </script>

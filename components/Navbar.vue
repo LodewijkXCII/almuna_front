@@ -37,3 +37,63 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@import '@/assets/scss/main.scss';
+
+//NAVBAR//
+.navbar-wrapper {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  backdrop-filter: brightness(1.5) opacity(0.5);
+
+  .navbar-brand img {
+    height: 75px;
+    width: auto;
+  }
+
+  .navbar-links {
+    display: none;
+    span {
+      display: unset;
+    }
+  }
+}
+
+.navbar-wrapper {
+  padding: 1rem 5rem;
+  max-height: 100px;
+  span {
+    display: none;
+  }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 5px;
+      &:nth-last-of-type(1) {
+        margin-right: 0;
+      }
+      &:hover {
+        color: $gold-color;
+        border-bottom: 1px solid $gold-color;
+      }
+      &:hover:nth-last-of-type(1) {
+        border: 0;
+      }
+    }
+  }
+}
+</style>

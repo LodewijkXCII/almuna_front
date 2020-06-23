@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-150">
+  <div class="container">
     <h1 class="text-center">Impressie</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti enim
@@ -19,7 +19,8 @@
             :key="pakket.index"
             :title="pakket.title"
             :description="pakket.description"
-            v-bind:link="pakket.link"
+            type="pakket"
+            :link="pakket.title"
           />
         </div>
       </div>
@@ -31,7 +32,8 @@
             :key="thema.index"
             :title="thema.title"
             :description="thema.description"
-            v-bind:link="thema.link"
+            type="thema"
+            :link="thema.title"
           />
         </div>
       </div>
